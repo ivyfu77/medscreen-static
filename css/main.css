@@ -1,0 +1,651 @@
+/* Fonts*/
+.VAGRoundedStd-Light { 
+    font-family: VAGRoundedStd-Light;
+    font-weight: normal;
+    font-style: normal;
+}
+.VAGRoundedStd-Bold { 
+    font-family: VAGRoundedStd-Bold;
+    font-weight: normal;
+    font-style: normal;
+}
+.VAGRoundedStd-Black { 
+    font-family: VAGRoundedStd-Black;
+    font-weight: normal;
+    font-style: normal;
+}
+.VAGRoundedStd-Thin { 
+    font-family: VAGRoundedStd-Thin;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* HTML5 Boilerplate  */
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; position: relative; min-height: 100%;}
+html, button, input, select, textarea { font-family: Arial, Helvetica, sans-serif; color: #222; }
+body { margin: 0; padding: 0; font-size: 1em; line-height: 1.4; }
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+}
+
+#container {
+    width: 100%;
+}
+
+#header {
+    z-index: 1000;
+    background-color: #a3dce1;
+    width: 100%;
+}
+
+#header-list {
+    max-width: 965px;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.current{
+    background-color: #8cd3d9 !important;
+    color: black !important;
+}
+
+.header-list-item{
+    padding-left: 1%;
+    padding-right: 1%;
+    display: inline-block;
+    height: 55px;
+}
+li.header-list-item button a {
+    font-family: VAGRoundedStd-Thin, 'Trebuchet MS', sans-serif;
+}
+
+.menu-item{
+    background-color: #a3dce1;
+    color: white;
+    font-size: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    cursor: pointer;
+    height: 55px;
+}
+
+.menu-item:hover{
+    background-color: #8cd3d9;
+    color: black;
+    cursor: pointer;
+}
+
+
+.menu-subitem a:hover {
+    background-color: #8cd3d9;
+    color: black;
+    cursor: pointer;
+}
+
+.header-list-item:hover .menu-subitem {
+    display: block;
+}
+
+.header-list-item:hover .menu-item{
+    background-color: #8cd3d9;
+    color: black;
+}
+
+.menu-subitem a {
+    color: white;
+    text-decoration: none;
+    background-color: #a3dce1;
+    display: block;
+    padding: 10px;
+    font-family: sans-serif;
+    border-bottom: solid 1px white;
+}
+
+.menu-subitem {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding-top: 1px;
+    min-width: 250px;
+    z-index: 100;
+}
+
+
+
+#advisor{
+    margin-top: 500px;
+}
+
+/** Footer **/
+#footer{
+    width: 100%;
+    background-color: #a3dce1;
+    padding-bottom: 20px;
+}
+
+#footer-container{
+    max-width: 1100px !important;
+    width: 90%;
+    padding-left: 5%;
+    margin: 0 auto;
+}
+
+.footer-section{
+    padding-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.footer-section-list-item{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-section-list-item img {
+    width:25px;
+    margin-top: -3px;
+}
+
+.item-header{
+    font-family: VAGRoundedStd-Thin, sans-serif;
+    color: white;
+    font-size: 16px;
+    vertical-align: text-bottom;
+}
+
+#footer-copyright{
+    font-size: 18px;
+    width: 145px;
+    color: white;
+    font-family: VAGRoundedStd-Thin, sans-serif;
+    margin: 20px auto 0;
+}
+
+.section-list a{
+    display: block;
+    padding-top: 5px;
+    color: white;
+    font-family: VAGRoundedStd-Thin, sans-serif;
+    font-size: 14px;
+}
+
+#content {
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+    max-width: 965px !important;
+    width: 90%;
+}
+
+/* Branding */
+#branding {
+    position:relative;
+    top:15px;
+    width:405px;
+    height:128px;
+    margin-bottom:30px;
+    background:transparent url('../imgs/logo-transparent.png') 50% 0 no-repeat;
+}
+
+/** Infomation & Sidebar (Insurance & Corporate)
+ * ==============================================
+ */
+#infoColumn .textContainer h4 {
+    margin-bottom:5px;
+    color:#004C45;
+    font-size:22px;
+}
+#insurance #infoColumn,
+#corporate #infoColumn,
+#workwithus #infoColumn,
+#about #infoColumn {
+    width:60%;
+    max-width: 579px;
+    display: inline-table;
+    vertical-align: top;
+}
+#insurance aside#sidebar,
+#corporate aside#sidebar,
+#workwithus aside#sidebar,
+#about aside#sidebar {
+    float:right;
+    top:114px;
+    width:30%;
+}
+#insurance .sidebarBox img,
+#workwithus .sidebarBox img,
+#corporate .sidebarBox img,
+#about .sidebarBox img {
+    position:relative;
+    width:100%;
+    margin-top:13px;
+    padding:6px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+    background:#8BD3D9;
+}
+#insurance #branding,
+#workwithus #branding,
+#corporate #branding,
+#about #branding {
+    top:0;
+    left: -4%;
+    width:339px;
+    margin-bottom:25px;
+}
+#insurance #infoColumn #forInsuranceClients.textContainer h2,
+#insurance #infoColumn #forInsuranceAdvisor.textContainer h2 {
+    padding:15px 20px;
+    color:#FFF;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    background:#26B0B8;
+    margin-top: 1em;
+}
+#insurance #infoColumn h2 {
+    color:#FFF;
+    font-size:30px;
+}
+#insurance #infoColumn .textContainer h2 {
+    color: #004C45;
+    margin-top: 2em;
+}
+#insurance #infoColumn #forInsuranceClients.textContainer .insurance h4,
+#insurance #infoColumn #forInsuranceAdvisor.textContainer .insurance h4 {
+    padding-right:20px;
+    padding-left:20px;
+}
+#insurance #infoColumn .textContainer .insurance p,
+#insurance #infoColumn .textContainer p,
+#workwithus #infoColumn .textContainer p,
+#corporate #infoColumn .textContainer p {
+    padding:5px 20px;
+    font-size:18px;
+    line-height: 30px;
+}
+.insurance-offers {
+    border-radius: 20px;
+    background-color: #E9F7F8;
+    margin-bottom: 3.5em;
+}
+.insurance-offers ul {
+    line-height: 2em;
+}
+
+.insurance-offers li {
+    list-style: none;
+    margin-left: -1em;
+}
+.insurance-offers li span {
+    display: inline-block;
+    font-style: italic;
+}
+.insurance-offers li span.lineItem {
+    font-weight: bold;
+    width: 35%;
+    min-width: 121px;
+    vertical-align: top;
+}
+.insurance-offers li span.lineContent {
+    width: 60%;
+}
+.insurance-offers h4.center-title {
+    padding-top: 1.5em;
+}
+.insurance-offers h4.msg-under-lineitem {
+    font-family: VAGRoundedStd-Thin;
+    padding: 0.5em 2em;
+}
+@media screen and (max-width: 767px) {
+    #insurance aside#sidebar,
+    #corporate aside#sidebar,
+    #workwithus aside#sidebar,
+    #about aside#sidebar {
+        display: none;
+        float:none;
+    }
+    #insurance #infoColumn,
+    #corporate #infoColumn,
+    #workwithus #infoColumn,
+    #about #infoColumn {
+        width:90%;
+        display: block;
+    }
+}
+@media screen and (max-width: 455px) {
+    .insurance-offers li span {
+        display: block;
+    }
+    .insurance-offers li span.lineItem {
+        font-weight: bold;
+        width: 100%;
+    }
+    .insurance-offers li span.lineContent {
+        width: 100%;
+        padding-right: 10px;
+    }
+    #insurance #infoColumn,
+    #corporate #infoColumn,
+    #workwithus #infoColumn,
+    #about #infoColumn {
+        width:100%;
+    }
+}
+
+.center-title {
+    text-align: center;
+}
+.clear {
+    clear: both;
+}
+
+/**
+    Corporate.html
+**/
+.corporate-info ul li {
+    list-style: none;
+    margin-left: -1em;
+    margin-top: 1em;
+}
+.corporate-info ol li {
+    margin-top: 1em;
+}
+.corporate-info p.above-order-line {
+    font-family: VAGRoundedStd-Thin;
+    color: #004C45;
+}
+.corporate-info p.under-order-line {
+    font-family: VAGRoundedStd-Thin;
+    color: #004C45;
+    line-height: 20px;
+    font-size: 0.8em;
+}
+.corporate-info p a {
+    font-style: italic;
+    color: #2cb1b9;
+}
+
+.content-container {
+    margin-top: 65px;
+    position: relative;
+    width: 100%;
+}
+/**
+    Links.html
+**/
+.content-container.links {
+    height: 600px;
+}
+
+.heading{
+    font-size: 40px;
+    color: #00a890;
+    font-family: VAGRoundedStd-Thin;
+}
+
+.sub-heading{
+    padding-top: 5px;
+    font-family: sans-serif;
+}
+
+.inline-link{
+    color: #00a890;
+}
+
+.useful-link{
+    height: 80px;
+    width: 160px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+.useful-link-img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+/** contact.html **/
+
+.content-container.contact{
+    margin-bottom: 50px;
+}
+.contact-container {
+    width: 95%;
+    margin: 2em auto;
+}
+.heading.contact {
+    background-color: #26b0b8;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 55px 0 0;
+}
+
+.formbox {
+    width: 250px;
+    font-size: 14px;
+    height: 20px;
+    padding: 5px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+#send {
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color: #a3dce1;
+    border: 1px solid darkgrey;
+    cursor: pointer;
+}
+
+#contactus-form{
+    display: inline-block;
+    width: 46%;
+}
+#contactus-form textarea {
+    border: 1px solid #cccccc;
+    padding: 4px;
+    width: 98%;
+    font-size: 1em;
+}
+.contact-sidebar {
+    float: right;
+    width: 45%;
+    margin-top: 45px;
+    color: #818181;
+}
+.contact-sidebar h4:first-of-type {
+    display: inline-block;
+    width: 5em;
+    font-size: 1em;
+    color: #26b0b8;
+    height: 25px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+#contactus-form input {
+    width: 100%;
+    border: 1px solid #cccccc;
+}
+.side-phone p:last-child {
+    margin-left: 7em;
+    margin-top: -5px;
+}
+@media screen and (max-width: 786px) {
+    #contactus-form{
+        display: block;
+        width: 90%;
+    }
+    .contact-sidebar {
+        float: none;
+        display: block;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .contact-sidebar h4:first-of-type {
+        display: block;
+    }
+    .side-phone {
+        margin-top: 20px;
+    }
+    .side-phone p:last-child {
+        margin-left: 0;
+        margin-top: -2px;
+    }
+}
+/** about.html **/
+#about .heading.contact {
+    margin: 35px 0 0;
+}
+
+#security-and-compliance {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#security-and-compliance li {
+    font-family: VAGRoundedStd-Bold;
+    color: rgb(0, 76, 69);
+    font-size: 18px;
+}
+.content-container.about{
+    margin-bottom: 30px;
+}
+
+#medscreen-logo{
+    background: transparent url("../imgs/logo-transparent.png") no-repeat;
+    height: 160px;
+    width: auto;
+}
+
+.about-section{
+    display: inline-block;
+}
+
+.about-section.main{
+    width: 60%;
+    margin-right: 70px;
+}
+
+.about-section.side-bar{
+    width: 30%;
+    position: absolute;
+}
+
+.question-container {
+    padding: 20px 0 0 20px;
+}
+
+.question {
+    color: #004c45;
+    font-size: 20px;
+    font-family: VAGRoundedStd-Bold;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.answer {
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#group-image{
+    overflow: hidden;
+    border-radius: 30px;
+}
+#group-image img {
+    width: 100%;
+}
+
+.group-name {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-style: italic;
+    font-family: sans-serif;
+    line-height: 28px;
+    color: #26b0b8;
+    font-size: 20px;
+}
+
+.answer.border {
+    border-bottom: solid 4px #8cd3d9;
+}
+
+.side-bar-image{
+    border: solid 5px #8cd3d9;
+    border-radius: 21px;
+    width: 100%;
+}
+
+.description-text{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.description-text.requirements{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.work-us{
+    margin-bottom: 5px;
+    color: #004c45;
+    font-size: 22px;
+}
+
+.work-description{
+    width: 100% !important;
+}
+
+.work-list-container{
+    margin-top: 5px;
+}
+
+.lineItem.item{
+    display: inline-block;
+}
+.lineItem.item.text{
+    padding-left: 10px;
+    vertical-align: top;
+    width: 95%;
+}
+.box-bottom{
+    padding-bottom: 20px;
+}

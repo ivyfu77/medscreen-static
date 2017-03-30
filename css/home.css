@@ -1,0 +1,214 @@
+/**
+ * Defint the home page style
+ * Include Slider, Quotes
+ */
+
+ /* Slider */
+ #slides {
+  display: none;
+  position: relative;
+  max-height: 250px;
+}
+
+#slides .slidesjs-navigation {
+  margin-top:5px;
+}
+.slidesjs-container {
+  max-height: 250px;
+  z-index: -1;
+}
+a.slidesjs-next,
+a.slidesjs-previous,
+a.slidesjs-play,
+a.slidesjs-stop {
+  background-image: url(../imgs/btns-next-prev.png);
+  background-repeat: no-repeat;
+  display:block;
+  width:12px;
+  height:18px;
+  overflow: hidden;
+  text-indent: -9999px;
+  float: left;
+  margin-right:5px;
+}
+
+a.slidesjs-next {
+  margin-right:10px;
+  background-position: -12px 0;
+}
+
+a:hover.slidesjs-next {
+  background-position: -12px -18px;
+}
+
+a.slidesjs-previous {
+  background-position: 0 0;
+}
+
+a:hover.slidesjs-previous {
+  background-position: 0 -18px;
+}
+
+a.slidesjs-play {
+  width:15px;
+  background-position: -25px 0;
+}
+
+a:hover.slidesjs-play {
+  background-position: -25px -18px;
+}
+
+a.slidesjs-stop {
+  width:18px;
+  background-position: -41px 0;
+}
+
+a:hover.slidesjs-stop {
+  background-position: -41px -18px;
+}
+
+.slidesjs-pagination {
+  margin: 7px auto 0;
+  list-style: none;
+  position: relative;
+  bottom: 28px;
+  z-index: 10;
+  opacity: 0.7;
+  width: 100px;
+  padding-left: 0;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 6px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../imgs/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+  color: #9e2020
+}
+
+.navbar {
+  overflow: hidden
+}
+/** Rotating Testimonials
+ * ==============================================
+ */
+#quotes{
+    min-height: 300px;
+    width: 100%;
+    margin-top: 45px;
+}
+#quotes li{ 
+    display:none;
+}
+.quote-box {
+    background-color: rgba(8, 168, 136, 0.15);
+    border-radius: 10px;
+    min-height: 149px;
+    width: 90%;
+    margin-left: 5%;
+}
+#quotes ul{
+    list-style: none;
+    padding-bottom: 10px;
+}
+#quotes .quote-box p{
+    width: 90%;
+    margin-left: 20px;
+    font-size: 0.9em;
+    padding-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+    color: #004c45;
+}
+blockquote {
+    font-size: 1.1em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 0 0 10px 0px;
+    font-style: italic;
+    font-weight: 300;
+    color: #7f7d7d;
+    margin-left: 0;
+}
+
+/* Home page styles */
+#home-logo {
+    background: transparent url(../imgs/logo-transparent.png) 75% 0 no-repeat;
+    width: 274px;
+    height: 128px;
+    position: relative;
+    text-align: center;
+    margin-left: calc(50% - 137px);
+    margin-top: 27px;
+    margin-bottom: 34px;
+}
+.line-box {
+	width: 100%;
+	border-bottom: 1px solid #02b0bb;
+}
+#mobile-health-screening {
+	margin-top: 45px;
+	margin-bottom: 56px;
+}
+.section-container {
+	width: 49%;
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+  vertical-align: top;
+}
+.section-container img {
+  width: 78%;
+}
+.section-container p {
+	width: 77%;
+  margin-left: 12%;
+  text-align: left;
+  margin-bottom: 0;
+}
+.section-container h2 {
+	font-family: 'Open Sans';
+	color: #02a987;
+	font-weight: 400;
+}
+h1.section-title, h1.testimonials-title {
+	margin-bottom: 34px;
+	font-family: 'Open Sans';
+	color: #004c45;
+	font-weight: 600;
+}
+
+/* Fit for Mobile Devices */
+@media screen and (max-width: 480px) {
+  .section-container {
+    display: block;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

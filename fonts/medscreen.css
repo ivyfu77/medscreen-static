@@ -1,0 +1,45 @@
+/* @license
+ * MyFonts Webfont Build ID 2683974, 2013-11-07T20:30:46-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: VAG Rounded Light by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/vag-rounded/light/
+ * 
+ * Webfont: VAG Rounded Bold by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/vag-rounded/bold/
+ * 
+ * Webfont: VAG Rounded Black by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/vag-rounded/black/
+ * 
+ * Webfont: VAG Rounded Thin by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/vag-rounded/thin/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2683974
+ * Licensed pageviews: 250,000
+ * Webfonts copyright: Copyright &#x00A9; 1989, 1995, 2001 Adobe Systems Incorporated.  All Rights Reserved.
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("https://hello.myfonts.net/count/28f446");
+
+  
+@font-face {font-family: 'VAGRoundedStd-Light';src: url('webfonts/28F446_0_0.eot');src: url('webfonts/28F446_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/28F446_0_0.woff') format('woff'),url('webfonts/28F446_0_0.ttf') format('truetype'),url('webfonts/28F446_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'VAGRoundedStd-Bold';src: url('webfonts/28F446_1_0.eot');src: url('webfonts/28F446_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/28F446_1_0.woff') format('woff'),url('webfonts/28F446_1_0.ttf') format('truetype'),url('webfonts/28F446_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'VAGRoundedStd-Black';src: url('webfonts/28F446_2_0.eot');src: url('webfonts/28F446_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/28F446_2_0.woff') format('woff'),url('webfonts/28F446_2_0.ttf') format('truetype'),url('webfonts/28F446_2_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'VAGRoundedStd-Thin';src: url('webfonts/28F446_3_0.eot');src: url('webfonts/28F446_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/28F446_3_0.woff') format('woff'),url('webfonts/28F446_3_0.ttf') format('truetype'),url('webfonts/28F446_3_0.svg#wf') format('svg');}
+ 
