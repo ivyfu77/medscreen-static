@@ -188,7 +188,7 @@ li.header-list-item button a {
     position: relative;
     z-index: 0;
     margin: 0 auto;
-    max-width: 965px !important;
+    max-width: 965px;
     width: 90%;
 }
 
@@ -210,19 +210,13 @@ li.header-list-item button a {
     color:#004C45;
     font-size:22px;
 }
-#insurance #infoColumn,
-#corporate #infoColumn,
-#workwithus #infoColumn,
-#about #infoColumn {
+#infoColumn {
     width:60%;
     max-width: 579px;
     display: inline-table;
     vertical-align: top;
 }
-#insurance aside#sidebar,
-#corporate aside#sidebar,
-#workwithus aside#sidebar,
-#about aside#sidebar {
+aside#sidebar {
     float:right;
     top:114px;
     width:30%;

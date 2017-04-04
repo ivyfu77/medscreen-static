@@ -1,0 +1,17 @@
+/*
+ * For Desktop with wide screen more than 1380px
+ *
+ */
+#content {
+ 	max-width: 1350px;
+ 	width: 70%;
+}
+
+#infoColumn {
+ 	max-width: 900px;
+ 	width: 65%;
+}
+
+aside#sidebar {
+	width: 290px;
+}
