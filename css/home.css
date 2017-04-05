@@ -8,6 +8,7 @@
   display: none;
   position: relative;
   max-height: 250px;
+  width: 100%;
 }
 
 #slides .slidesjs-navigation {
@@ -203,13 +204,4 @@ h1.section-title, h1.testimonials-title {
 	color: #004c45;
 	font-weight: 600;
   text-align: center;
-}
-
-/* Fit for Mobile Devices */
-@media screen and (max-width: 480px) {
-  .section-container {
-    display: block;
-    width: 90%;
-    margin-bottom: 20px;
-  }
 }

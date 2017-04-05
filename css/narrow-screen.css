@@ -1,0 +1,125 @@
+/*
+ * For Devices with narrow screen less than 980px
+ *
+ */
+.menu-item {
+	font-size: 15px;
+}
+.footer-section {
+	display: none;
+}
+#footer-container {
+	height: 10px;
+}
+#header-list {
+	margin-right: 30px;
+}
+
+/* Add toggle menu and hide nav bar */
+@media screen and (max-width: 849px) {
+	#header-list {
+		display: none;
+	}
+	.toggle-btn {
+		display: inline-block;
+		float: right;
+		margin-right: 15px;
+	}
+	.toggle-list-item {
+		background-color: #a3dce1;
+		color: white;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+		height: 55px;
+	}
+	.toggle-list-item:hover,
+	.toggle-list-subitem a:hover {
+		background-color: #8cd3d9;
+		color: black;
+	}
+	.toggle-list-subitem {
+		font-size: 13px;
+		margin-left: 10px;
+		color: #585757;
+	}
+	.toggle-list-subitem a {
+		display: block;
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+	#popup ul {
+		padding-left: 1.2em;
+	}
+	.toggle-list-item a {
+    font-family: VAGRoundedStd-Thin, 'Trebuchet MS', sans-serif;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+    #insurance aside#sidebar,
+    #corporate aside#sidebar,
+    #workwithus aside#sidebar,
+    #about aside#sidebar {
+        display: none;
+        float:none;
+    }
+    #insurance #infoColumn,
+    #corporate #infoColumn,
+    #workwithus #infoColumn,
+    #about #infoColumn {
+        width:90%;
+        display: block;
+    }
+}
+@media screen and (max-width: 455px) {
+    .insurance-offers li span {
+        display: block;
+    }
+    .insurance-offers li span.lineItem {
+        font-weight: bold;
+        width: 100%;
+    }
+    .insurance-offers li span.lineContent {
+        width: 100%;
+        padding-right: 10px;
+    }
+    #insurance #infoColumn,
+    #corporate #infoColumn,
+    #workwithus #infoColumn,
+    #about #infoColumn {
+        width:100%;
+    }
+}
+@media screen and (max-width: 786px) {
+    #contactus-form{
+        display: block;
+        width: 90%;
+    }
+    .contact-sidebar {
+        float: none;
+        display: block;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .contact-sidebar h4:first-of-type {
+        display: block;
+    }
+    .side-phone {
+        margin-top: 20px;
+    }
+    .side-phone p:last-child {
+        margin-left: 0;
+        margin-top: -2px;
+    }
+}
+/* Fit for Mobile Devices */
+@media screen and (max-width: 480px) {
+  .section-container {
+    display: block;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

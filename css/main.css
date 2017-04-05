@@ -49,6 +49,7 @@ button{
     z-index: 1000;
     background-color: #a3dce1;
     width: 100%;
+    height: 55px;
 }
 
 #header-list {
@@ -124,8 +125,27 @@ li.header-list-item button a {
     min-width: 250px;
     z-index: 100;
 }
-
-
+.toggle-btn {
+    display: none;
+    color: rgba(101, 96, 96, 0.73);
+    font-size: 2.5em;
+    cursor: pointer;
+}
+#popup {
+  width: 220px;
+  height: 100%;
+  position: absolute;
+  -webkit-transform: translate(-220px, 55px);
+  transform: translate(-220px,55px);
+  transition: transform 0.3s ease;
+  z-index: 11;
+  background-color: #a3dce1;
+  border: 1px solid lightgrey;
+}
+#popup.open {
+  -webkit-transform: translate(0, 55px);
+  transform: translate(0, 55px);
+}
 
 #advisor{
     margin-top: 500px;
@@ -307,42 +327,6 @@ aside#sidebar {
     font-family: VAGRoundedStd-Thin;
     padding: 0.5em 2em;
 }
-@media screen and (max-width: 767px) {
-    #insurance aside#sidebar,
-    #corporate aside#sidebar,
-    #workwithus aside#sidebar,
-    #about aside#sidebar {
-        display: none;
-        float:none;
-    }
-    #insurance #infoColumn,
-    #corporate #infoColumn,
-    #workwithus #infoColumn,
-    #about #infoColumn {
-        width:90%;
-        display: block;
-    }
-}
-@media screen and (max-width: 455px) {
-    .insurance-offers li span {
-        display: block;
-    }
-    .insurance-offers li span.lineItem {
-        font-weight: bold;
-        width: 100%;
-    }
-    .insurance-offers li span.lineContent {
-        width: 100%;
-        padding-right: 10px;
-    }
-    #insurance #infoColumn,
-    #corporate #infoColumn,
-    #workwithus #infoColumn,
-    #about #infoColumn {
-        width:100%;
-    }
-}
-
 .center-title {
     text-align: center;
 }

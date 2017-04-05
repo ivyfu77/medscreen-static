@@ -8,10 +8,41 @@
         <link rel="stylesheet" href="./css/main.css" type="text/css" />
         <link rel="stylesheet" href="./css/home.css" type="text/css" />
         <link rel="stylesheet" href="./css/wide-screen.css" media="screen and (min-width: 1380px)" />
+        <link rel="stylesheet" href="./css/narrow-screen.css" media="screen and (max-width: 979px)" />
     </head>
     <body>
         <div id="container">
             <div id="header">
+                <div id="popup">
+                    <ul>
+                        <li class="">
+                            <button class="toggle-list-item current"><a href="./index.html">Home</a></button>
+                        </li>
+                        <li class="">
+                            <button class="toggle-list-item"><a href="./insurance_services.html">Insurance Services</a></button>
+                            <div class="toggle-list-subitem">
+                                <a href="./insurance_services.html#forInsuranceClients">- For the Insurance Client</a>
+                                <a href="./insurance_services.html#forInsuranceAdvisor">- For the Insurance Advisor</a>
+                            </div>
+                        </li>
+                        <li class="">
+                            <button class="toggle-list-item"><a href="./corporate.html">Corporate</a></button>
+                        </li>
+                        <li class="">
+                            <button class="toggle-list-item"><a href="./work_with_us.html">Work with Us</a></button>
+                        </li>
+                        <li class="">
+                            <button class="toggle-list-item"><a href="./about.html">About MedScreen</a></button>
+                            <div class="toggle-list-subitem">
+                                <a href="./about.html#security-and-compliance">- Security and Compliance</a>
+                                <a href="./about.html#clinical-governance">- Clinical Governance Board</a>
+                            </div>
+                        </li>
+                        <li class="">
+                            <button class="toggle-list-item"><a href="./contact.html">Contact</a></button>
+                        </li>
+                    </ul>
+                </div>
                 <ul id="header-list">
                     <li class="header-list-item">
                         <button class="menu-item current"><a href="./index.html">Home</a></button>
@@ -40,6 +71,8 @@
                         <button class="menu-item"><a href="./contact.html">Contact</a></button>
                     </li>
                 </ul>
+                <div class="toggle-btn"><a onclick="toggleMenu()">&#9776;</a></div>
+                <div class="clear"></div>
             </div>
             <div id="slides">
                 <img src="imgs/banner/banner1.png" />
@@ -189,16 +222,16 @@
             </div>
             <div id="footer-copyright">&#169; MedScreen 2017</div>
         </div>
-    <!-- JavaScript files placed at the end of the documents so the pages load faster
-    ================================================== -->
-    <!-- Jquery core js files -->
-    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+        <!-- JavaScript files placed at the end of the documents so the pages load faster
+        ================================================== -->
+        <!-- Jquery core js files -->
+        <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 
-    <!-- SlidesJS Required: Link to jquery.slides.js -->
-    <script src="js/jquery.slides.min.js"></script>
+        <!-- SlidesJS Required: Link to jquery.slides.js -->
+        <script src="js/jquery.slides.min.js"></script>
 
-    <!-- Custom Scripts -->
-    <script type="text/javascript" src="js/script.js"></script>
+        <!-- Custom Scripts -->
+        <script type="text/javascript" src="js/script.js"></script>
 
     </body>
 </html>
