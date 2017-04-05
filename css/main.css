@@ -135,8 +135,9 @@ li.header-list-item button a {
   width: 220px;
   height: 100%;
   position: absolute;
-  -webkit-transform: translate(-220px, 55px);
-  transform: translate(-220px,55px);
+  top: 0;
+  -webkit-transform: translate(-222px, 55px);
+  transform: translate(-222px,55px);
   transition: transform 0.3s ease;
   z-index: 11;
   background-color: #a3dce1;
@@ -212,16 +213,6 @@ li.header-list-item button a {
     width: 90%;
 }
 
-/* Branding */
-#branding {
-    position:relative;
-    top:15px;
-    width:405px;
-    height:128px;
-    margin-bottom:30px;
-    background:transparent url('../imgs/logo-transparent.png') 50% 0 no-repeat;
-}
-
 /** Infomation & Sidebar (Insurance & Corporate)
  * ==============================================
  */
@@ -254,15 +245,7 @@ aside#sidebar {
     border-radius:30px;
     background:#8BD3D9;
 }
-#insurance #branding,
-#workwithus #branding,
-#corporate #branding,
-#about #branding {
-    top:0;
-    left: -4%;
-    width:339px;
-    margin-bottom:25px;
-}
+
 #insurance #infoColumn #forInsuranceClients.textContainer h2,
 #insurance #infoColumn #forInsuranceAdvisor.textContainer h2 {
     padding:15px 20px;

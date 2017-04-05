@@ -20,6 +20,20 @@
 	#header-list {
 		display: none;
 	}
+	#header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	#container {
+		position: relative;
+		top: 55px;
+	}
+	#footer {
+		position: relative;
+		top: 50px;
+	}
 	.toggle-btn {
 		display: inline-block;
 		float: right;
@@ -32,6 +46,8 @@
 		border: none;
 		cursor: pointer;
 		height: 55px;
+		width: 100%;
+		text-align: left;
 	}
 	.toggle-list-item:hover,
 	.toggle-list-subitem a:hover {
@@ -52,8 +68,14 @@
 		padding-left: 1.2em;
 	}
 	.toggle-list-item a {
-    font-family: VAGRoundedStd-Thin, 'Trebuchet MS', sans-serif;
-}
+    	font-family: VAGRoundedStd-Thin, 'Trebuchet MS', sans-serif;
+	}
+	.section-container h2 {
+		font-size: 1.3em;
+	}
+	#insurance #infoColumn .textContainer h2 {
+		margin-top: 1em;
+	}
 }
 
 
@@ -119,7 +141,28 @@
 @media screen and (max-width: 480px) {
   .section-container {
     display: block;
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
+  }
+  #medscreen-logo {
+  	background-position:center center;
+  	background-size:70%;
+  }
+  #home-logo {
+  	background-size: 64%;
+  	width: auto;
+  }
+  h1.section-title, h1.testimonials-title {
+  	font-size: 1.7em;
+  }
+  .content-container {
+  	margin-top: 10px;
+  }
+  #insurance #infoColumn h2,
+  #about .heading.contact {
+  	font-size: 1.5em;
+  }
+  .group-name {
+  	font-size: 1.1em;
   }
 }

@@ -164,10 +164,8 @@ blockquote {
     width: 274px;
     height: 128px;
     position: relative;
-    text-align: center;
-    margin-left: calc(50% - 137px);
-    margin-top: 27px;
-    margin-bottom: 34px;
+    background-position:center center;
+    margin: 27px auto 34px auto;
 }
 .line-box {
 	width: 100%;
