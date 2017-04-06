@@ -64,6 +64,23 @@
 		padding-top: 0px;
 		padding-bottom: 10px;
 	}
+	#popup {
+	  display: block;
+	  width: 220px;
+	  height: 100%;
+	  position: absolute;
+	  top: 0;
+	  -webkit-transform: translate(-222px, 55px);
+	  transform: translate(-222px,55px);
+	  transition: transform 0.3s ease;
+	  z-index: 11;
+	  background-color: #a3dce1;
+	  border: 1px solid lightgrey;
+	}
+	#popup.open {
+	  -webkit-transform: translate(0, 55px);
+	  transform: translate(0, 55px);
+	}
 	#popup ul {
 		padding-left: 1.2em;
 	}

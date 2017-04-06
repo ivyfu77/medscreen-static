@@ -132,22 +132,8 @@ li.header-list-item button a {
     cursor: pointer;
 }
 #popup {
-  width: 220px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  -webkit-transform: translate(-222px, 55px);
-  transform: translate(-222px,55px);
-  transition: transform 0.3s ease;
-  z-index: 11;
-  background-color: #a3dce1;
-  border: 1px solid lightgrey;
+    display: none;
 }
-#popup.open {
-  -webkit-transform: translate(0, 55px);
-  transform: translate(0, 55px);
-}
-
 #advisor{
     margin-top: 500px;
 }
