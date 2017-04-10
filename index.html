@@ -5,11 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/main.css" type="text/css" />
         <link rel="stylesheet" href="./css/home.css" type="text/css" />
-        <link rel="stylesheet" href="./fonts/medscreen.css" type="text/css" />
         <link rel="stylesheet" href="./css/wide-screen.css" media="screen and (min-width: 1380px)" />
         <link rel="stylesheet" href="./css/narrow-screen.css" media="screen and (max-width: 979px)" />
     </head>
-    <body id="home">
+    <body id="home"  onload="startSlide()">
         <div id="header">
             <ul id="header-list">
                 <li class="header-list-item">
@@ -231,7 +230,44 @@
 
         <!-- Custom Scripts -->
         <script type="text/javascript" src="js/script.js" async></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(function(){ //Showing the rotating testimonials
+                    var items = (Math.floor(Math.random() * ($('#quotes li').length)));
+                    $('#quotes li').hide().eq(items).show();
+                    
+                  function next(){
+                        $('#quotes li:visible').delay(5000).fadeOut('slow',function(){
+                            $(this).appendTo('#quotes ul');
+                            $('#quotes li:first').fadeIn('slow',next);
+                    });
+                   }
+                  next();
+                });
 
+
+            });
+            function startSlide() {
+              $('#slides').slidesjs({
+                width: 1500,
+                height: 250,
+                play: {
+                  active: false,
+                  auto: true,
+                  interval: 6000,
+                  swap: true,
+                  pauseOnHover: true,
+                },
+                navigation: {
+                    active: false
+                },
+                pagination: {
+                    active: true
+                }
+              });
+            }
+        </script>
     </body>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600" rel="stylesheet">
     <link rel="stylesheet" href="./fonts/medscreen.css" type="text/css" />
