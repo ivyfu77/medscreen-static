@@ -57,7 +57,7 @@ button{
 }
 @media screen and (max-width: 1160px) {
     .login-icon img {
-        display: none;
+        visibility: hidden;
     }
 }
 
