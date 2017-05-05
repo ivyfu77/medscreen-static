@@ -8,6 +8,21 @@
         <link rel="stylesheet" href="./css/narrow-screen.css" media="screen and (max-width: 979px)" />
     </head>
     <body id="contact">
+        <style type="text/css">
+            #sendMsg {
+                display: none;
+                color: #26b899;
+                font-family: Arial;
+                margin-left: 40px;
+                font-style: italic;
+                font-weight: 100;
+                font-size: 0.85em;
+            }
+        </style>
+        <div id="login">
+            <div class="login-icon"><a target="_blank" href="https://www.medscreenfbs.co.nz"><img src="imgs/login-icon.png" style="width: 35px" /></a></div>
+            <div class="login-tag"><a target="_blank" href="https://www.medscreenfbs.co.nz"><img src="imgs/login-tag.png" style="width: 100%" /></a></div>
+        </div>
         <div id="header">
             <ul id="header-list">
                 <li class="header-list-item">
@@ -75,35 +90,35 @@
                 <div class="heading contact">Contact Us</div>
                 <div class="contact-container">
                     <div id="contactus-form">
-                        <form id="contactUs" method="post" action="https://www.medscreen.co.nz/contact" >
+                        <form id="contactUs" method="post">
                             <p> 
                                 <label for="name">Name:</label>
-                                <input type="text" id="name" class="formbox" name="name"/>                                
+                                <input type="text" id="name" class="formbox" name="name" required />                                
                             </p>
                             <p> 
                                 <label for="email">Email:</label>
-                                <input type="email" id="email" class="formbox" name="email"/>                                
+                                <input type="email" id="email" class="formbox" name="email" required />                                
                             </p>
                             <p> 
                                 <label for="comments">Comments:</label>
-                                <textarea name="comments" id="comments" rows="8"></textarea>
+                                <textarea name="comments" id="comments" rows="8" maxlength="500" required></textarea>
                             </p>
                             <p>
-                                <button form="contactUs" name="send" id="send" type="submit">Send Message</button>
+                                <button form="contactUs" name="send" id="send" type="submit">Send Message</button><span id="sendMsg"></span>
                             </p>
                         </form>
                     </div>
                     <div class="contact-sidebar">
-                        <div class="side-email">
-                            <img src="imgs/mail-icon.png" />
+                        <div class="side-item">
+                            <div><img src="imgs/mail-icon.png" /></div>
                             <h4>Email</h4>
-                            <span>admin@medscreen.co.nz</span>
+                            <p>admin@medscreen.co.nz</p>
                         </div>
-                        <div class="side-phone">
-                            <img src="imgs/phone-icon.png" />
+                        <div class="side-item side-phone">
+                            <div><img src="imgs/phone-icon.png" /></div>
                             <h4>Phone</h4>
-                            <span>09 600 6220</span>
-                            <p>(Mon - Fri, 9:00am - 5:00pm)</p>
+                            <p>09 600 6220</p>
+                            <p>&nbsp;&nbsp;(Mon - Fri, 9:00am - 5:00pm)</p>
                         </div>
                     </div>
                     <div class="clear"></div>
