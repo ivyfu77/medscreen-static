@@ -10,7 +10,8 @@ function toggleMenu() {
 	}
 }
 
-$('#contactUs').submit(function() {
+$('#contactUs').submit(function(e) {
+	e.preventDefault();
 	$("#sendMsg").hide();
 	$.ajax({
 	    url: "PHPMailer/gmail.php", 
@@ -43,5 +44,5 @@ $('#contactUs').submit(function() {
 	    	$("#sendMsg").show(0).delay(3000).hide(0);
 	    }
 	});
-	return false;
+	//return false;
 });
