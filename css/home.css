@@ -117,6 +117,55 @@ a:hover.slidesjs-stop {
 .navbar {
   overflow: hidden
 }
+/** Login
+ * ==============================================
+ */
+.login-section {
+  margin-top: 45px;
+}
+.login-section h2 {
+  font-family: 'Open Sans';
+  color: #02a987;
+  font-weight: 400;
+  text-align: center;
+}
+.login-section h1.section-title {
+  margin-bottom: 0px
+}
+// .login-section .section-title {
+//   font-size: 1.7em;
+// }
+
+.login-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:180px;
+  margin: 0px auto 40px auto;
+  height: 55px;
+  background-color: #daf2ed;
+  color:#03a987;
+  cursor: pointer;
+  border: 1px solid rgba(3, 169, 135, 0.34);
+  border-radius: 10px;
+}
+.login-btn:hover {
+  border: 1px solid rgba(3, 169, 135, 0.84);
+  background-color: #bfe6e8;
+}
+.login-btn span {
+  margin-left: 20px;
+  font-weight: 600;
+}
+.login-btn img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 35px;
+  opacity: 0.50;
+}
+
 /** Rotating Testimonials
  * ==============================================
  */
@@ -191,7 +240,7 @@ blockquote {
   text-align: left;
   margin-bottom: 0;
 }
-.section-container h2 {
+.section-container h2, .login-section h2 {
 	font-family: 'Open Sans';
 	color: #02a987;
 	font-weight: 400;
